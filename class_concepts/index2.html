@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES7 Class</title>
+</head>
+<body>
+    
+
+<h4>    ES7 CLASS</h4>
+
+    <script>
+
+// the newer or updated version of es6 classes
+// we can write class without constructor method 
+// we cab write varaibles without this. method
+// we can write arrow methods or function in this
+
+//  no use of super keyword
+// without suepr keyword we can access the varaiables from parent class
+
+
+
+
+
+
+
+class hero{
+    age=50;
+   getAge=()=>console.log(this.age)
+}
+
+class hello extends hero{
+    name="kalyan";
+  getName=()=>console.log(this.name)
+}
+
+
+let obj=new hello()
+obj.getName()
+obj.getAge()
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

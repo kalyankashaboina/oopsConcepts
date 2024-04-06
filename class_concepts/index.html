@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <h3>ES6 CLASS</h3>
+
+    <script>
+// Class
+// In JavaScript, a "class" is a blueprint for creating objects that share common properties and methods. 
+// It's a way to define reusable code that can be used to create multiple instances of an object with similar behavior.
+// Constructor
+// it is used to initilise variables for object
+
+// instance of object: invoke new kwyword followed by class name
+
+
+// bassic example
+
+class hellos{
+  constructor(){
+
+// constructor is used to insalising an newer version of variables
+
+
+    this.name="kalyan"
+
+    // the variables insalied in the constructor were using this keyword
+    // this is used for reffering current object or current class varable
+  }
+  
+  getName(){
+    console.log(this.name)
+    
+  }
+  
+}
+
+// getname()
+// to use methods or variable in a class outside of it we have to use a reference variable of object
+
+let obj=new hellos()
+obj.getName()
+
+
+
+
+// here we cannot access the get name method directly 
+
+
+// here the inhertance concept
+
+
+
+class hero{
+  constructor(){
+    this.age=50;
+  }
+   getAge(){
+    console.log(this.age)
+    
+  }
+}
+
+class hello extends hero{
+  constructor(){
+    super()
+    // we use super keyword to access vriables from parent class
+    // if dont use super keyword we get error
+    this.name="kalyan"
+  }
+  
+  getName(){
+    console.log(this.name)
+    
+  }
+  
+}
+
+let obj1=new hello()
+obj1.getName()
+obj1.getAge()
+
+
+
+
+
+
+
+
+
+
+
+
+class heroi{
+    age=50;
+   getAge=()=>console.log(this.age)
+}
+
+class hellor extends heroi{
+    name="kalyan";
+  getName=()=>console.log(this.name)
+}
+
+
+let objs=new hellor()
+objs.getName()
+objs.getAge()
+
+
+
+
+
+    </script>
+</body>
+</html>
